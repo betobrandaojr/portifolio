@@ -82,11 +82,20 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+.logoNav {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin-left: -10px;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: y;
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
@@ -95,7 +104,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    /*width: 100%;*/
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -231,10 +240,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.background-text{
+  background: linear-gradient(90.21deg, rgba(129, 30, 108, 0.356) -5.91%, rgba(28, 44, 49, 0.507) 111.58%);
+  border: 1px solid rgba(31, 187, 174, 0.411);
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.MyName{
+  color: #08abac;
+  font-size: 90px;
+  font-weight: bold;
+  pointer-events: none;
+  user-select: text;
+}
+
+.abaut{
+  text-align: center;
+  pointer-events: none;
+  user-select: text;
+  text-indent: 400px;
+}
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 180px 0 100px 0;
+  background-image: url('./assets/img/Banner-6.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,26 +273,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
 .banner h1 {
   font-size: 65px;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  pointer-events: none;
+  user-select: none;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #f3efef;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  pointer-events: none;
+  user-select: text;
+  
 }
 .banner button {
   color: #fff;
@@ -282,22 +315,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+  
+  white-space: nowrap;
 }
 
 /************ Skills Css ************/
@@ -313,11 +335,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: -60px;
 }
 .skill h2 {
+  color: #08abac;
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: #e6e6e6;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
